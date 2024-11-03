@@ -1,7 +1,12 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    max-height: 20px;
+    max-height: 20%;
     justify-content: flex-start;
-
+    background-color:rgb(20, 89, 129);
 }
+
+.flex-item{
+    padding-left: 10px;
+}
+

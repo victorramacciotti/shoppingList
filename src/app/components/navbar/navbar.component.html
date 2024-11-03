@@ -1,19 +1,19 @@
 <nav class="navbar">
-    <ul>
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/profile">Profile</a></li>
-    </ul>
-    <div>
 
-        <button (click)="login()">Login</button>
-       
+        <div class="flex-item">
+            <a routerLink="/">Home</a>
         </div>
-    <div>
+
+        <div class="flex-item">
+            <a routerLink="/profile">Profile</a>
+        </div>
+    
+    <div class="flex-item">
         @if(auth.isAuthenticated$ | async){
-        <button (click)="auth.logout()">Log out</button>
+        <button class="btn" (click)="auth.logout()">Log out</button>
         } 
         @else {
-        <button (click)="auth.loginWithRedirect()">Log in</button>
+        <button class="btn" (click)="auth.loginWithRedirect()">Log in</button>
         }
     </div>
 </nav>

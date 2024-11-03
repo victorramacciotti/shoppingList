@@ -13,12 +13,21 @@ import { AsyncPipe } from '@angular/common';
 export class NavbarComponent {
   
   constructor(public auth: AuthService) {}
+  
 
-
-  login() {
+  /*login() {
 
   this.auth.loginWithRedirect();
   }
+
+  logout() {
+    this.auth.logout({
+   
+    logoutParams: {returnTo: this.document.location.origin,},
+   
+    });
+   
+    }*/
 
   
 }
