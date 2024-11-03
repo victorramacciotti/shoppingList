@@ -1,0 +1,17 @@
+.list{
+    background-color: rgb(212, 227, 235);
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.list-track{
+    color: rgb(107, 113, 121);
+    background-color: rgb(151, 163, 173);
+}
+
+.list h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
