@@ -1,10 +1,12 @@
-# ShoppingList
+# ShopList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+This project uses json-server, so it is necessary to run `npm install json-server` to install it, as well as `npx json-server shoppingList/db.json` or `npx json-server db.json` to start the server.
 
 ## Code scaffolding
 
