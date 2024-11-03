@@ -1,21 +1,25 @@
 <nav class="navbar">
-
+    <div class="navbar">
         <div class="flex-item">
-            <a routerLink="/">Home</a>
+            <a routerLink="/myList">Minha Lista</a>
         </div>
 
         <div class="flex-item">
             <a routerLink="/profile">Profile</a>
         </div>
-    
-    <div class="flex-item">
-        @if(auth.isAuthenticated$ | async){
-        <button class="btn" (click)="auth.logout()">Log out</button>
-        } 
-        @else {
-        <button class="btn" (click)="auth.loginWithRedirect()">Log in</button>
-        }
     </div>
+        
+    <div>
+        <div class="flex-btn">
+            @if(auth.isAuthenticated$ | async){
+                <button class="btn" (click)="auth.logout()">Log out</button>
+            } 
+            @else {
+                <button class="btn" (click)="auth.loginWithRedirect()">Log in</button>
+            }
+        </div>
+    </div>
+    
 </nav>
 
 
