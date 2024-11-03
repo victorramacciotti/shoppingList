@@ -13,13 +13,14 @@ export const appConfig: ApplicationConfig = {
       domain: 'dev-7fvb7yro48pcduqm.us.auth0.com',
       clientId: 'KZHWPMBGOnddUixc0aIwn2GNFqQZYQcc',
       authorizationParams: {
-        redirect_uri: `http://localhost:4200/`,
+        redirect_uri: window.location.origin,
+        audience: 'https://dev-7fvb7yro48pcduqm.us.auth0.com/api/v2/',
+        scope: 'openid profile email offline_access',
       },
+      useRefreshTokens: true,
+      cacheLocation: 'localstorage',
     }),
     ],
 };
 
-let url: URL|null = null;
-if (typeof window !== 'undefined') {
-  url =  new URL (window.location.origin)
-}
+
